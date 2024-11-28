@@ -10,7 +10,7 @@ const configDatabase = {
   username: process.env.DB_USERNAME,
   password: process.env.DB_PASSWORD,
   database: process.env.DB_DATABASE,
-  port: 24992,
+  port: process.env.DB_PORT||24992,
   dialectOptions: {
     ssl: {
       require: true,
